@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ORCHID HERITAGE</title>
+    <meta name="msapplication-TileColor" content="#da532c">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=DM+Serif+Display&amp;family=Libre+Bodoni:ital,wght@0,700;1,700&amp;display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-date-range-picker/0.21.1/daterangepicker.css"
+      integrity="sha512-rl6l4lw3xK70bXQTEm+0py1Frc9yXsf/nhsm7eM2+X6movmsFGKPJRpwIJZWkLAqKauVxUUjiKnTV6+PcRC0cg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+      integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+      integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css"
+      integrity="sha512-qveKnGrvOChbSzAdtSs8p69eoLegyh+1hwOMbmpCViIwj7rn4oJjdmMvWOuyQlTOZgTlZA0N2PXA7iA8/2TUYA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="css/style.css" rel="stylesheet">
+   
+  </head>
+  <body>
+    <div class="flex flex-col min-h-screen lg:overflow-hidden"><!-- header-->
+      <header class="header relative z-10">
+        <div class="py-4">
+          <div class="container relative flex items-center h-[4.8125rem] md:flex-row-reverse">
+            <button
+              class="header-burger group flex flex-col justify-center items-center w-12 h-12 mr-auto before:w-8 before:h-0.5 before:bg-n-400 before:rounded before:transition-colors after:w-4 after:h-0.5 after:bg-n-400 after:rounded after:transition-colors hover:before:bg-n-800 hover:after:bg-n-800 lg:mr-8 md:ml-auto md:mr-0">
+              <span class="w-6 h-0.5 my-1.5 rounded bg-n-400 transition-colors group-hover:bg-n-800"></span>
+            </button>
+            <a class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:static lg:mr-auto lg:translate-x-0 lg:translate-y-0"
+              href="index.html"><img src="img/logo.svg" alt=""></a>
+            <div class="flex items-center md:hidden">
+              <div class="language relative z-2 mr-8">
+                <button class="language-button flex items-center text-h7 uppercase text-n-700">ENG
+                  <svg class="ml-1 fill-n-500 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" viewBox="0 0 24 24">
+                    <path
+                      d="M12 15.275a.54.54 0 0 1-.209-.042c-.066-.027-.126-.068-.177-.118L6.16 9.661c-.213-.213-.213-.558 0-.771s.558-.213.771 0L12 13.959l5.069-5.069c.213-.213.558-.213.771 0s.213.558 0 .771l-5.454 5.455c-.051.051-.111.091-.177.118a.54.54 0 0 1-.209.042z" />
+                  </svg>
+                </button>
+                <div
+                  class="language-body absolute top-full -left-2 -right-2 mt-1 py-1 bg-white invisible opacity-0 transition-all">
+                  <a class="language-link active block px-2 py-1 text-h7 uppercase text-n-700 transition-colors cursor-pointer hover:text-primary-500"
+                    href="#">ENG</a>
+                  <a class="language-link block px-2 py-1 text-h7 uppercase text-n-700 transition-colors cursor-pointer hover:text-primary-500"
+                    href="#">VN</a>
+                 
+                </div>
+              </div>
+              <a class="btn-secondary h-12 px-5 text-16m" href="reservation.html">Book a Tour</a>
+            </div>
+          </div>
+        </div>
+        <div class="pt-0.25 lg:hidden">
+          <div class="container">
+            <div class="flex justify-center space-x-10 border-b border-n-100">
+              <a class="relative flex items-center h-11 px-4 pb-1 text-14r text-n-70 before:absolute before:left-0 before:right-0 before:-bottom-0.25 before:h-0.25 before:bg-n-400 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+                href="special-offers.html">The Resort</a>
+              <a class="relative flex items-center h-11 px-4 pb-1 text-14r text-n-70 before:absolute before:left-0 before:right-0 before:-bottom-0.25 before:h-0.25 before:bg-n-400 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+                href="accommodation.html">Accommodation</a>
+              <div class="header-item group relative z-2">
+                <button class="header-button relative flex items-center h-11 px-4 pb-1 text-14r text-n-700">
+                  <span>Services</span>
+                  <svg
+                    class="ml-1 fill-primary-500 transition-transform hover-hover:group-hover:rotate-180 xl:ui-open:rotate-180"
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                      d="M12 15.275a.54.54 0 0 1-.209-.042c-.066-.027-.126-.068-.177-.118L6.16 9.661c-.213-.213-.213-.558 0-.771s.558-.213.771 0L12 13.959l5.069-5.069c.213-.213.558-.213.771 0s.213.558 0 .771l-5.454 5.455c-.051.051-.111.091-.177.118a.54.54 0 0 1-.209.042z" />
+                  </svg>
+                </button>
+                <div
+                  class="header-body absolute top-full -left-4 -mt-1 px-8 py-6 bg-white space-y-4 invisible opacity-0 transition-all">
+                  <a class="block text-nowrap text-14r text-n-700 transition-colors hover:text-primary-500"
+                    href="dining.html">Dining</a>
+                  <a class="block text-nowrap text-14r text-n-700 transition-colors hover:text-primary-500"
+                    href="wedding-and-events.html">Wedding & Events</a>
+                  <a class="block text-nowrap text-14r text-n-700 transition-colors hover:text-primary-500"
+                    href="accommodation.html">Accommodation</a>
+                  <a class="block text-nowrap text-14r text-n-700 transition-colors hover:text-primary-500"
+                    href="wellness.html">Spa & Fitness</a>
+                </div>
+              </div>
+              <a class="relative flex items-center h-11 px-4 pb-1 text-14r text-n-70 before:absolute before:left-0 before:right-0 before:-bottom-0.25 before:h-0.25 before:bg-n-400 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+                href="contact-us.html">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="grow">
+        <div class="pt-10 pb-40 2xl:pb-30 md:pt-3 md:pb-20">
+          <div class="container">
+            <div class="mb-20 text-center text-h2 lg:mb-10">News & Press.</div>
+            <div class="flex flex-wrap -mt-14 -mx-3 md:block md:m-0">
+              <div
+                class="flex flex-col w-[calc(33.333%-1.5rem)] mt-14 mx-3 bg-white lg:w-[calc(50%-1.5rem)] md:w-full md:mx-0 md:mt-6">
+                <div class="relative h-[20.625rem]"><img class="absolute top-0 left-0 w-full h-full object-cover"
+                    src="img/news-pic-1.jpg" alt=""></div>
+                <div class="flex flex-col items-start grow px-6 py-8">
+                  <div class="h-[7.1875rem] mb-2 line-clamp-3 text-h3 md:h-auto md:mb-6 md:line-clamp-none">Discover
+                    Phu Quoc By Experience 1001 Water Activities</div>
+                  <div class="mb-8 text-16r">ORCHID HERITAGE's Restaurant highlights the best of Vietnamese cuisine,
+                    featuring all-day dining with fresh, seasonal produce and local seafood.</div>
+                  <a class="group inline-flex items-center mt-auto text-h7 uppercase text-primary-500"
+                    href="news-details.html">
+                    <span>Read More</span>
+                    <svg class="w-8 h-8 ml-4 fill-primary-500 transition-transform group-hover:translate-x-1"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <path
+                        d="M23.39 12.288a.43.43 0 0 0 0-.576l-2.4-2.593c-.147-.159-.386-.159-.533 0a.43.43 0 0 0 0 .576L22.59 12l-2.133 2.305a.43.43 0 0 0 0 .576c.147.159.386.159.533 0l2.4-2.593zM.5 12.407h22.623v-.815H.5v.815z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(33.333%-1.5rem)] mt-14 mx-3 bg-white lg:w-[calc(50%-1.5rem)] md:w-full md:mx-0 md:mt-6">
+                <div class="relative h-[20.625rem]"><img class="absolute top-0 left-0 w-full h-full object-cover"
+                    src="img/news-pic-2.jpg" alt=""></div>
+                <div class="flex flex-col items-start grow px-6 py-8">
+                  <div class="h-[7.1875rem] mb-2 line-clamp-3 text-h3 md:h-auto md:mb-6 md:line-clamp-none">Freedom
+                    Package - 4 Days & 3 Nights</div>
+                  <div class="mb-8 text-16r">ORCHID HERITAGE's Restaurant highlights the best of Vietnamese cuisine,
+                    featuring all-day dining with fresh, seasonal produce and local seafood.</div>
+                  <a class="group inline-flex items-center mt-auto text-h7 uppercase text-primary-500"
+                    href="news-details.html">
+                    <span>Read More</span>
+                    <svg class="w-8 h-8 ml-4 fill-primary-500 transition-transform group-hover:translate-x-1"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <path
+                        d="M23.39 12.288a.43.43 0 0 0 0-.576l-2.4-2.593c-.147-.159-.386-.159-.533 0a.43.43 0 0 0 0 .576L22.59 12l-2.133 2.305a.43.43 0 0 0 0 .576c.147.159.386.159.533 0l2.4-2.593zM.5 12.407h22.623v-.815H.5v.815z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(33.333%-1.5rem)] mt-14 mx-3 bg-white lg:w-[calc(50%-1.5rem)] md:w-full md:mx-0 md:mt-6">
+                <div class="relative h-[20.625rem]"><img class="absolute top-0 left-0 w-full h-full object-cover"
+                    src="img/news-pic-3.jpg" alt=""></div>
+                <div class="flex flex-col items-start grow px-6 py-8">
+                  <div class="h-[7.1875rem] mb-2 line-clamp-3 text-h3 md:h-auto md:mb-6 md:line-clamp-none">All
+                    Inclusive Package - Summer 2023</div>
+                  <div class="mb-8 text-16r">ORCHID HERITAGE's Restaurant highlights the best of Vietnamese cuisine,
+                    featuring all-day dining with fresh, seasonal produce and local seafood.</div>
+                  <a class="group inline-flex items-center mt-auto text-h7 uppercase text-primary-500"
+                    href="news-details.html">
+                    <span>Read More</span>
+                    <svg class="w-8 h-8 ml-4 fill-primary-500 transition-transform group-hover:translate-x-1"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <path
+                        d="M23.39 12.288a.43.43 0 0 0 0-.576l-2.4-2.593c-.147-.159-.386-.159-.533 0a.43.43 0 0 0 0 .576L22.59 12l-2.133 2.305a.43.43 0 0 0 0 .576c.147.159.386.159.533 0l2.4-2.593zM.5 12.407h22.623v-.815H.5v.815z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(33.333%-1.5rem)] mt-14 mx-3 bg-white lg:w-[calc(50%-1.5rem)] md:w-full md:mx-0 md:mt-6">
+                <div class="relative h-[20.625rem]"><img class="absolute top-0 left-0 w-full h-full object-cover"
+                    src="img/news-pic-4.jpg" alt=""></div>
+                <div class="flex flex-col items-start grow px-6 py-8">
+                  <div class="h-[7.1875rem] mb-2 line-clamp-3 text-h3 md:h-auto md:mb-6 md:line-clamp-none">“Hidden
+                    Oasis Experience” Stay and Play Package</div>
+                  <div class="mb-8 text-16r">ORCHID HERITAGE's Restaurant highlights the best of Vietnamese cuisine,
+                    featuring all-day dining with fresh, seasonal produce and local seafood.</div>
+                  <a class="group inline-flex items-center mt-auto text-h7 uppercase text-primary-500"
+                    href="news-details.html">
+                    <span>Read More</span>
+                    <svg class="w-8 h-8 ml-4 fill-primary-500 transition-transform group-hover:translate-x-1"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <path
+                        d="M23.39 12.288a.43.43 0 0 0 0-.576l-2.4-2.593c-.147-.159-.386-.159-.533 0a.43.43 0 0 0 0 .576L22.59 12l-2.133 2.305a.43.43 0 0 0 0 .576c.147.159.386.159.533 0l2.4-2.593zM.5 12.407h22.623v-.815H.5v.815z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(33.333%-1.5rem)] mt-14 mx-3 bg-white lg:w-[calc(50%-1.5rem)] md:w-full md:mx-0 md:mt-6">
+                <div class="relative h-[20.625rem]"><img class="absolute top-0 left-0 w-full h-full object-cover"
+                    src="img/news-pic-5.jpg" alt=""></div>
+                <div class="flex flex-col items-start grow px-6 py-8">
+                  <div class="h-[7.1875rem] mb-2 line-clamp-3 text-h3 md:h-auto md:mb-6 md:line-clamp-none">Stay More,
+                    Pay Less - 4 Nights</div>
+                  <div class="mb-8 text-16r">ORCHID HERITAGE's Restaurant highlights the best of Vietnamese cuisine,
+                    featuring all-day dining with fresh, seasonal produce and local seafood.</div>
+                  <a class="group inline-flex items-center mt-auto text-h7 uppercase text-primary-500"
+                    href="news-details.html">
+                    <span>Read More</span>
+                    <svg class="w-8 h-8 ml-4 fill-primary-500 transition-transform group-hover:translate-x-1"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <path
+                        d="M23.39 12.288a.43.43 0 0 0 0-.576l-2.4-2.593c-.147-.159-.386-.159-.533 0a.43.43 0 0 0 0 .576L22.59 12l-2.133 2.305a.43.43 0 0 0 0 .576c.147.159.386.159.533 0l2.4-2.593zM.5 12.407h22.623v-.815H.5v.815z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(33.333%-1.5rem)] mt-14 mx-3 bg-white lg:w-[calc(50%-1.5rem)] md:w-full md:mx-0 md:mt-6">
+                <div class="relative h-[20.625rem]"><img class="absolute top-0 left-0 w-full h-full object-cover"
+                    src="img/news-pic-6.jpg" alt=""></div>
+                <div class="flex flex-col items-start grow px-6 py-8">
+                  <div class="h-[7.1875rem] mb-2 line-clamp-3 text-h3 md:h-auto md:mb-6 md:line-clamp-none">Longstay
+                    offer at ORCHID HERITAGE Resort</div>
+                  <div class="mb-8 text-16r">ORCHID HERITAGE's Restaurant highlights the best of Vietnamese cuisine,
+                    featuring all-day dining with fresh, seasonal produce and local seafood.</div>
+                  <a class="group inline-flex items-center mt-auto text-h7 uppercase text-primary-500"
+                    href="news-details.html">
+                    <span>Read More</span>
+                    <svg class="w-8 h-8 ml-4 fill-primary-500 transition-transform group-hover:translate-x-1"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <path
+                        d="M23.39 12.288a.43.43 0 0 0 0-.576l-2.4-2.593c-.147-.159-.386-.159-.533 0a.43.43 0 0 0 0 .576L22.59 12l-2.133 2.305a.43.43 0 0 0 0 .576c.147.159.386.159.533 0l2.4-2.593zM.5 12.407h22.623v-.815H.5v.815z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(33.333%-1.5rem)] mt-14 mx-3 bg-white lg:w-[calc(50%-1.5rem)] md:w-full md:mx-0 md:mt-6">
+                <div class="relative h-[20.625rem]"><img class="absolute top-0 left-0 w-full h-full object-cover"
+                    src="img/news-pic-7.jpg" alt=""></div>
+                <div class="flex flex-col items-start grow px-6 py-8">
+                  <div class="h-[7.1875rem] mb-2 line-clamp-3 text-h3 md:h-auto md:mb-6 md:line-clamp-none">Discover
+                    Phu Quoc By Experience 1001 Water Activities</div>
+                  <div class="mb-8 text-16r">ORCHID HERITAGE's Restaurant highlights the best of Vietnamese cuisine,
+                    featuring all-day dining with fresh, seasonal produce and local seafood.</div>
+                  <a class="group inline-flex items-center mt-auto text-h7 uppercase text-primary-500"
+                    href="news-details.html">
+                    <span>Read More</span>
+                    <svg class="w-8 h-8 ml-4 fill-primary-500 transition-transform group-hover:translate-x-1"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <path
+                        d="M23.39 12.288a.43.43 0 0 0 0-.576l-2.4-2.593c-.147-.159-.386-.159-.533 0a.43.43 0 0 0 0 .576L22.59 12l-2.133 2.305a.43.43 0 0 0 0 .576c.147.159.386.159.533 0l2.4-2.593zM.5 12.407h22.623v-.815H.5v.815z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(33.333%-1.5rem)] mt-14 mx-3 bg-white lg:w-[calc(50%-1.5rem)] md:w-full md:mx-0 md:mt-6">
+                <div class="relative h-[20.625rem]"><img class="absolute top-0 left-0 w-full h-full object-cover"
+                    src="img/news-pic-8.jpg" alt=""></div>
+                <div class="flex flex-col items-start grow px-6 py-8">
+                  <div class="h-[7.1875rem] mb-2 line-clamp-3 text-h3 md:h-auto md:mb-6 md:line-clamp-none">Customer
+                    Deposit Scam Warning</div>
+                  <div class="mb-8 text-16r">ORCHID HERITAGE's Restaurant highlights the best of Vietnamese cuisine,
+                    featuring all-day dining with fresh, seasonal produce and local seafood.</div>
+                  <a class="group inline-flex items-center mt-auto text-h7 uppercase text-primary-500"
+                    href="news-details.html">
+                    <span>Read More</span>
+                    <svg class="w-8 h-8 ml-4 fill-primary-500 transition-transform group-hover:translate-x-1"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <path
+                        d="M23.39 12.288a.43.43 0 0 0 0-.576l-2.4-2.593c-.147-.159-.386-.159-.533 0a.43.43 0 0 0 0 .576L22.59 12l-2.133 2.305a.43.43 0 0 0 0 .576c.147.159.386.159.533 0l2.4-2.593zM.5 12.407h22.623v-.815H.5v.815z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(33.333%-1.5rem)] mt-14 mx-3 bg-white lg:w-[calc(50%-1.5rem)] md:w-full md:mx-0 md:mt-6">
+                <div class="relative h-[20.625rem]"><img class="absolute top-0 left-0 w-full h-full object-cover"
+                    src="img/news-pic-9.jpg" alt=""></div>
+                <div class="flex flex-col items-start grow px-6 py-8">
+                  <div class="h-[7.1875rem] mb-2 line-clamp-3 text-h3 md:h-auto md:mb-6 md:line-clamp-none">ORCHID HERITAGE
+                    Resort Wins 2023 Tripadvisor Travelers’ Choice Award</div>
+                  <div class="mb-8 text-16r">ORCHID HERITAGE's Restaurant highlights the best of Vietnamese cuisine,
+                    featuring all-day dining with fresh, seasonal produce and local seafood.</div>
+                  <a class="group inline-flex items-center mt-auto text-h7 uppercase text-primary-500"
+                    href="news-details.html">
+                    <span>Read More</span>
+                    <svg class="w-8 h-8 ml-4 fill-primary-500 transition-transform group-hover:translate-x-1"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <path
+                        d="M23.39 12.288a.43.43 0 0 0 0-.576l-2.4-2.593c-.147-.159-.386-.159-.533 0a.43.43 0 0 0 0 .576L22.59 12l-2.133 2.305a.43.43 0 0 0 0 .576c.147.159.386.159.533 0l2.4-2.593zM.5 12.407h22.623v-.815H.5v.815z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- footer-->
+      <footer class="bg-white">
+        <div class="py-8 border-b border-n-100">
+          <div class="container flex justify-between items-center md:block">
+            <div class="flex md:justify-center md:mb-6">
+              <a class="group" href="" target="_blank">
+                <svg class="w-10 h-10 fill-n-700 transition-colors group-hover:fill-primary-500"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path
+                    d="M16 7.317s-1.295-.094-1.805.08c-.843.288-.863.96-.863 1.602v1.31h2.578l-.377 2.506h-2.201V19h-2.912v-6.186H8v-2.506h2.421V8.183c0-2.25 1.875-3.065 2.994-3.163S16 5.216 16 5.216v2.102z" />
+                </svg>
+              </a>
+              <a class="group" href="" target="_blank">
+                <svg class="w-10 h-10 fill-n-700 transition-colors group-hover:fill-primary-500"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path
+                    d="M14.754 5.5c2.068 0 3.746 1.677 3.746 3.746v5.509c0 2.069-1.677 3.746-3.746 3.746H9.246c-2.068 0-3.746-1.677-3.746-3.746V9.246C5.5 7.177 7.177 5.5 9.246 5.5h5.509zm.11 1.212H9.136c-.643 0-1.259.255-1.714.71s-.71 1.071-.71 1.714v5.729c0 .643.255 1.259.71 1.714s1.071.71 1.714.71h5.729c1.339 0 2.424-1.085 2.424-2.424V9.136c0-.643-.255-1.259-.71-1.714s-1.071-.71-1.714-.71zM12 8.666c1.841 0 3.334 1.493 3.334 3.334 0 .884-.351 1.732-.976 2.357s-1.473.976-2.358.976c-1.841 0-3.334-1.493-3.334-3.334S10.159 8.666 12 8.666zm0 1.167A2.17 2.17 0 0 0 9.833 12 2.17 2.17 0 0 0 12 14.167 2.17 2.17 0 0 0 14.167 12 2.17 2.17 0 0 0 12 9.833zm3.777-2.012c.097.04.184.098.258.172s.133.161.173.258.061.2.061.304a.79.79 0 0 1-.06.304c-.04.096-.099.184-.172.258s-.162.132-.258.172-.2.06-.304.06-.208-.021-.304-.061c-.194-.081-.347-.235-.427-.429s-.08-.412.001-.606.234-.348.428-.429.412-.081.606-.002z" />
+                </svg>
+              </a>
+              <a class="group" href="" target="_blank">
+                <svg class="w-10 h-10 fill-n-700 transition-colors group-hover:fill-primary-500"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path
+                    d="M8.731 18h-2.57V9.944h2.57V18h0zM7.446 8.889c-.383 0-.751-.152-1.022-.423S6 7.828 6 7.444s.152-.75.423-1.021S7.062 6 7.446 6s.751.152 1.022.423.424.638.424 1.021-.152.751-.424 1.021-.639.423-1.022.423zM18 18h-2.523v-4.405c0-.224.035-1.708-1.226-1.708-.224-.006-.446.043-.648.142s-.376.244-.509.425a1.76 1.76 0 0 0-.352 1.071V18h-2.52V9.944h2.397v1.131c.574-.879 1.297-1.201 2.008-1.331 1.263-.23 3.372.538 3.372 2.83V18z" />
+                </svg>
+              </a>
+              <a class="group" href="" target="_blank">
+                <svg class="w-10 h-10 fill-n-700 transition-colors group-hover:fill-primary-500"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path d="M8 18V6l10 6.102z" />
+                </svg>
+              </a>
+              <a class="group" href="" target="_blank">
+                <svg class="w-10 h-10 fill-n-700 transition-colors group-hover:fill-primary-500"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path
+                    d="M11.536 8.257c.337.33.304 1.084.106 1.688-.011.033-.011.069 0 .102a.17.17 0 0 0 .06.084c.028.021.063.034.098.035s.071-.008.101-.026c.512-.318 1.337-.725 2.192-.716 1.398.015 1.23 1.345 1.169 1.659a2.47 2.47 0 0 1-.16.462c-.019.044-.028.091-.026.139s.015.094.037.137.055.079.094.108a.33.33 0 0 0 .132.058 3.21 3.21 0 0 1 .909.322c.618.344.883 1.301.664 1.972-.302.927-1.007 1.924-2.617 2.743-1.053.536-2.453.976-3.942.976C5.4 18 5 14.963 5 14.339c0-1.872 1.754-4.523 3.348-5.459s2.551-1.248 3.188-.624zm-1.305 3.325c-2.376.162-4.213 1.548-4.102 3.094s2.126 2.668 4.502 2.505 4.213-1.548 4.102-3.094-2.126-2.668-4.502-2.505zm2.145 2.597c.236 1.039-.573 2.099-1.807 2.366s-2.425-.358-2.66-1.398.574-2.099 1.807-2.366 2.425.358 2.66 1.398zm-3.261.28c-.368.179-.524.601-.35.944s.613.475.98.296.524-.601.35-.944-.613-.475-.98-.296zm1.45-.335c-.157.076-.228.249-.158.385s.253.185.41.109.228-.249.158-.385-.253-.185-.41-.109zm7.564-6.736c.917 1.147 1.019 2.646.726 3.553-.042.124-.133.228-.252.287a.52.52 0 0 1-.386.031.51.51 0 0 1-.297-.243.49.49 0 0 1-.038-.377c.217-.67.095-1.822-.557-2.637-.585-.732-1.465-1.067-2.614-.997a.52.52 0 0 1-.201-.022c-.065-.02-.125-.053-.176-.097a.5.5 0 0 1-.124-.156.49.49 0 0 1-.025-.387.5.5 0 0 1 .103-.17.51.51 0 0 1 .162-.118.52.52 0 0 1 .196-.047c1.875-.115 2.929.686 3.482 1.378zm-1.48 1.144a2.15 2.15 0 0 1 .393 1.884c-.036.114-.116.209-.224.265a.47.47 0 0 1-.35.035.46.46 0 0 1-.274-.216c-.059-.104-.073-.227-.04-.342.072-.238.05-.724-.225-1.058-.217-.263-.56-.379-1.019-.344-.061.004-.121-.003-.179-.021s-.111-.048-.157-.087-.084-.086-.111-.139-.044-.111-.049-.17.003-.119.022-.175a.45.45 0 0 1 .089-.154.46.46 0 0 1 .142-.109.47.47 0 0 1 .174-.048c.972-.073 1.52.328 1.809.678z" />
+                </svg>
+              </a>
+              <a class="group" href="" target="_blank">
+                <svg class="w-10 h-10 fill-n-700 transition-colors group-hover:fill-primary-500"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path
+                    d="M14.788 10.289c2.326 0 4.212 1.521 4.212 3.398 0 1.007-.543 1.912-1.407 2.535a.36.36 0 0 0-.127.168.35.35 0 0 0-.01.208l.191.729c.007.027.005.055-.004.081s-.028.049-.051.065-.051.025-.08.026-.057-.007-.081-.022l-.889-.556a.38.38 0 0 0-.15-.054c-.054-.007-.108-.003-.16.012-.469.137-.956.207-1.445.206-2.326 0-4.212-1.521-4.212-3.398s1.886-3.398 4.212-3.398zM10.058 6.5c2.522 0 4.613 1.489 4.995 3.437l-.266-.007c-2.526 0-4.582 1.685-4.582 3.756a3.12 3.12 0 0 0 .154.966l-.302.007c-.592.001-1.181-.083-1.747-.25-.059-.017-.12-.022-.181-.014a.43.43 0 0 0-.17.061l-1.138.712c-.024.015-.052.023-.081.022s-.056-.01-.08-.026-.041-.039-.051-.065-.011-.054-.004-.081l.251-.96c.021-.079.017-.161-.011-.238a.41.41 0 0 0-.146-.191C5.657 12.884 5 11.794 5 10.58 5 8.327 7.264 6.5 10.058 6.5zm3.322 5.531a.59.59 0 0 0-.412.165c-.109.106-.171.25-.171.399s.061.294.171.399a.59.59 0 0 0 .412.165.59.59 0 0 0 .412-.165c.109-.106.171-.25.171-.399s-.061-.293-.171-.399a.59.59 0 0 0-.412-.165zm2.816 0a.59.59 0 0 0-.412.165c-.109.106-.171.25-.171.399s.061.294.171.399a.59.59 0 0 0 .412.165.59.59 0 0 0 .412-.165c.109-.106.171-.25.171-.399s-.061-.293-.171-.399a.59.59 0 0 0-.412-.165zm-4.715-3.388a.7.7 0 0 0-.23.146c-.066.063-.118.138-.154.22a.66.66 0 0 0-.001.522c.035.083.087.158.153.221a.7.7 0 0 0 .229.147.72.72 0 0 0 .27.05c.092-.001.184-.019.269-.054a.69.69 0 0 0 .377-.367.66.66 0 0 0-.001-.518.69.69 0 0 0-.377-.366.72.72 0 0 0-.534-.001zm-3.114-.052a.71.71 0 0 0-.495.199c-.131.127-.205.3-.205.48s.074.352.205.479a.71.71 0 0 0 .495.199.71.71 0 0 0 .495-.199c.131-.127.205-.3.205-.479s-.074-.352-.205-.48a.71.71 0 0 0-.495-.199z" />
+                </svg>
+              </a>
+            </div>
+            <a class="btn-secondary min-w-[14.8rem] md:min-w-full" href="reservation.html">BEST PRICE GUARANTEE</a>
+          </div>
+        </div>
+        <div class="py-8 border-b border-n-100">
+          <div class="container flex justify-between lg:flex-wrap md:block md:space-y-6">
+            <div class="footer-item">
+              <div
+                class="footer-head mb-4 text-16m text-primary-500 md:flex md:justify-between md:items-center md:mb-0">
+                More information
+                <svg class="hidden fill-primary-500 md:block md:transition-transform" xmlns="http://www.w3.org/2000/svg"
+                  width="24" height="24" viewBox="0 0 24 24">
+                  <path
+                    d="M12 15.275a.54.54 0 0 1-.209-.042c-.066-.027-.126-.068-.177-.118L6.16 9.661c-.213-.213-.213-.558 0-.771s.558-.213.771 0L12 13.959l5.069-5.069c.213-.213.558-.213.771 0s.213.558 0 .771l-5.454 5.455c-.051.051-.111.091-.177.118a.54.54 0 0 1-.209.042z" />
+                </svg>
+              </div>
+              <div class="footer-body flex flex-col items-start space-y-3 md:pt-4">
+                <a class="text-n-700 transition-colors hover:text-primary-500" href="about-us.html">About Us</a>
+                <a class="text-n-700 transition-colors hover:text-primary-500" href="contact-us.html">Contact Us</a>
+                <a class="text-n-700 transition-colors hover:text-primary-500" href="vouchers.html">Gift Card</a>
+                <a class="text-n-700 transition-colors hover:text-primary-500" href="career.html">Careers</a>
+                <a class="text-n-700 transition-colors hover:text-primary-500" href="policy.html">Privacy Notice</a>
+                <a class="text-n-700 transition-colors hover:text-primary-500" href="policy.html">Legal Noice</a>
+                <a class="text-n-700 transition-colors hover:text-primary-500" href="history.html">Leadership</a>
+              </div>
+            </div>
+            <div class="footer-item">
+              <div
+                class="footer-head mb-4 text-16m text-primary-500 md:flex md:justify-between md:items-center md:mb-0">
+                Our Products
+                <svg class="hidden fill-primary-500 md:block md:transition-transform" xmlns="http://www.w3.org/2000/svg"
+                  width="24" height="24" viewBox="0 0 24 24">
+                  <path
+                    d="M12 15.275a.54.54 0 0 1-.209-.042c-.066-.027-.126-.068-.177-.118L6.16 9.661c-.213-.213-.213-.558 0-.771s.558-.213.771 0L12 13.959l5.069-5.069c.213-.213.558-.213.771 0s.213.558 0 .771l-5.454 5.455c-.051.051-.111.091-.177.118a.54.54 0 0 1-.209.042z" />
+                </svg>
+              </div>
+              <div class="footer-body flex flex-col items-start space-y-3 md:pt-4">
+                <a class="text-n-700 transition-colors hover:text-primary-500" href="index.html">Essentials</a>
+                <a class="text-n-700 transition-colors hover:text-primary-500" href="index.html">e-Gifting</a>
+                <a class="text-n-700 transition-colors hover:text-primary-500"
+                  href="accommodation.html">Accommodation</a>
+                <a class="text-n-700 transition-colors hover:text-primary-500" href="dining.html">Dining</a>
+                <a class="text-n-700 transition-colors hover:text-primary-500" href="wellness.html">Spa & Fitness</a>
+                <a class="text-n-700 transition-colors hover:text-primary-500" href="special-offers.html">Offers</a>
+                <a class="text-n-700 transition-colors hover:text-primary-500" href="wedding-and-events.html">Events</a>
+              </div>
+            </div>
+            <div class="footer-item">
+              <div
+                class="footer-head mb-4 text-16m text-primary-500 md:flex md:justify-between md:items-center md:mb-0">
+                Other Page
+                <svg class="hidden fill-primary-500 md:block md:transition-transform" xmlns="http://www.w3.org/2000/svg"
+                  width="24" height="24" viewBox="0 0 24 24">
+                  <path
+                    d="M12 15.275a.54.54 0 0 1-.209-.042c-.066-.027-.126-.068-.177-.118L6.16 9.661c-.213-.213-.213-.558 0-.771s.558-.213.771 0L12 13.959l5.069-5.069c.213-.213.558-.213.771 0s.213.558 0 .771l-5.454 5.455c-.051.051-.111.091-.177.118a.54.54 0 0 1-.209.042z" />
+                </svg>
+              </div>
+              <div class="footer-body flex flex-col items-start space-y-3 md:pt-4">
+                <a class="text-n-700 transition-colors hover:text-primary-500" href="reservation.html">Reservation</a>
+                <a class="text-n-700 transition-colors hover:text-primary-500" href="gallery.html">Image Gallery</a>
+                <a class="text-n-700 transition-colors hover:text-primary-500" href="index.html">Cookie Preferences</a>
+                <a class="text-n-700 transition-colors hover:text-primary-500" href="index.html">Best Rate Guarantee</a>
+              </div>
+            </div>
+            <div class="lg:w-full lg:mt-12">
+              <div class="mb-4 text-16m text-primary-500">Contact Us</div>
+              <div class="mb-14 md:mb-8">
+                <p>ORCHID HERITAGE RESORT & SPA</p>
+                <p>Duong Dong, Phu Quoc Island</p>
+                <p>Tel: +84 XXX XXX XXX</p>
+                <p>Reservations: +84 XXX XXX XXX</p>
+                <p>Mail: contact@orchidheritage.com</p>
+              </div>
+              <form class="relative grow">
+                <input
+                  class="w-full h-11 border-b border-n-100 bg-transparent pr-8 rounded-none outline-none text-14r text-n-700 transition-colors placeholder:text-n-400 focus:border-n-300"
+                  type="text" name="subscribe" placeholder="Enter email to subscribe" required />
+                <button class="group absolute top-1/2 right-0 -translate-y-1/2">
+                  <svg class="transition-colors group-hover:fill-primary-500" xmlns="http://www.w3.org/2000/svg"
+                    width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                      d="M15.265 12a.54.54 0 0 1-.042.209c-.027.066-.068.126-.118.177L9.651 17.84c-.213.213-.558.213-.771 0s-.213-.558 0-.771L13.949 12 8.88 6.931c-.213-.213-.213-.558 0-.771s.558-.213.771 0l5.455 5.455c.051.051.091.111.118.177a.54.54 0 0 1 .042.209z" />
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="py-6">
+          <div class="container flex justify-between items-center lg:flex-col-reverse lg:items-stretch">
+            <div class="">Copyright © 2024 - ORCHID HERITAGE Resort. Designed by TAMLE5911. All rights reserved.</div>
+            <a class="lg:hidden" href="index.html"><img class="w-[4.3rem]" src="img/logo.svg" alt=""></a>
+            <div class="flex items-center lg:mb-6">
+              <div class="mr-8 text-h7 uppercase">Choose your language</div>
+              <div class="language relative z-2">
+                <button class="language-button flex items-center text-h7 uppercase text-n-700">English
+                  <svg class="ml-2.5 fill-n-500 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" viewBox="0 0 24 24">
+                    <path
+                      d="M12 15.275a.54.54 0 0 1-.209-.042c-.066-.027-.126-.068-.177-.118L6.16 9.661c-.213-.213-.213-.558 0-.771s.558-.213.771 0L12 13.959l5.069-5.069c.213-.213.558-.213.771 0s.213.558 0 .771l-5.454 5.455c-.051.051-.111.091-.177.118a.54.54 0 0 1-.209.042z" />
+                  </svg>
+                </button>
+                <div
+                  class="language-body absolute -left-2 -right-2 bottom-full mb-1 py-1 bg-white shadow-md invisible opacity-0 transition-all">
+                  <a class="language-link active block px-2 py-1 text-h7 uppercase text-n-700 transition-colors cursor-pointer hover:text-primary-500"
+                    href="#">English</a>
+                  <a class="language-link block px-2 py-1 text-h7 uppercase text-n-700 transition-colors cursor-pointer hover:text-primary-500"
+                    href="#">Vietname</a>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div><!-- sidebar-->
+    <div
+      class="sidebar fixed top-0 left-0 bottom-0 z-30 w-[34.7rem] p-14 bg-white overflow-auto no-scrollbar -translate-x-full transition-transform duration-300 2xl:w-[28rem] 2xl:p-10 lg:p-8 lg:pt-7 md:flex md:flex-col md:w-full">
+      <div class="flex items-start justify-between mb-9 lg:items-center">
+        <a class="" href="index.html"><img src="img/logo.svg" alt=""></a>
+        <button class="sidebar-close group">
+          <svg class="w-8 h-8 fill-n-600 transition-colors group-hover:fill-primary-300 lg:w-6 lg:h-6"
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M1.718 22.28a.75.75 0 0 0 .531.22.75.75 0 0 0 .531-.22l9.218-9.217 9.222 9.217a.75.75 0 0 0 1.061 0 .75.75 0 0 0 0-1.061l-9.222-9.217 9.218-9.221a.75.75 0 0 0 0-1.061.75.75 0 0 0-1.061 0l-9.218 9.221-9.222-9.217a.75.75 0 0 0-1.018.039.75.75 0 0 0-.039 1.018l9.218 9.221-9.218 9.221a.75.75 0 0 0 0 1.057z" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex flex-col items-start space-y-6">
+        <a class="py-1 text-h4-libre text-n-500 transition-colors hover:text-primary-600 lg:text-h5"
+          href="special-offers.html">The Resort</a>
+        <a class="py-1 text-h4-libre text-n-500 transition-colors hover:text-primary-600 lg:text-h5"
+          href="accommodation.html">Accommodation</a>
+        <div class="">
+          <div class="py-1 text-h4-libre text-n-500 lg:text-h5">Services</div>
+          <div class="flex flex-col items-start pt-4 pl-4 space-y-6">
+            <a class="text-h6 text-n-500 transition-colors hover:text-primary-600" href="dining.html">Dining</a>
+            <a class="text-h6 text-n-500 transition-colors hover:text-primary-600"
+              href="wedding-and-events.html">Wedding & Events</a>
+            <a class="text-h6 text-n-500 transition-colors hover:text-primary-600"
+              href="accommodation.html">Accommondation</a>
+            <a class="text-h6 text-n-500 transition-colors hover:text-primary-600" href="wellness.html">Spa &
+              Fitness</a>
+          </div>
+        </div>
+        <a class="py-1 text-h4-libre text-n-500 transition-colors hover:text-primary-600 lg:text-h5"
+          href="contact-us.html">Contact Us</a>
+      </div>
+    </div><!-- overlay-->
+    <div class="overlay fixed inset-0 z-20 bg-black/60 invisible opacity-0 transition-all"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-date-range-picker/0.21.1/jquery.daterangepicker.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
